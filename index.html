@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"
+    integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ=="
+    crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+    <div id="main" style="position: relative; height: 600px; width: 1110px;">
+
+        <div class="frame" id="frame">
+            <button class="custom-btn btn-5" id="queue"><span>Queue Online</span></button>
+            <br>
+            <button class="custom-btn btn-5" id="duel"><span>Duel a friend</span></button>
+            <br>
+            <button class="custom-btn btn-5" id="local"><span>Local game</span></button>
+        </div>
+
+        <div id="logo">
+            <img src="./img/logo1.gif" , id="logo" , height="150" , width="150">
+        </div>
+
+        <div id="timer">
+            <span id="min"> 00 </span>&nbsp;:
+            <span id="sec"> 00 </span>&nbsp;:
+            <span id="ms"> 00 </span>
+        </div>
+        <div id="countdown">
+            <span id="count"> 3 </span>
+        </div>
+        <div id="settings">
+            <button id="set"><img src="./img/set.png" , height="40" , width="40"></button>
+        </div>
+        <canvas></canvas>
+    </div>
+
+    <img src="./img/lc.png" , id="lc" , height="0" , width="0">
+    <img src=" ./img/bg.png" , id="bg" , height="0" , width="0">
+    <img src="./img/tile.png" , id="texture" , height="0" , width="0">
+    <img src="./img/overlay.png" , id="overlay" , height="0" , width="0">
+
+
+    <script src="utils.js"></script>
+    <script src="variables.js"></script>
+    <script src="block.js"></script>
+
+    <script src="./board/board1.js"></script>
+    <script src="./board/board2.js"></script>
+    <script src="./board/ai.js"></script>
+
+    <script src="events.js"></script>
+    <script src="./board/game.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

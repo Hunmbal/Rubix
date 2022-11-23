@@ -1,0 +1,118 @@
+body {
+    height: 600px;
+    width: 1110px;
+}
+
+#set {
+    position: absolute;
+    border-radius: 40%;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+    top: 90%;
+    left: 94.5%;
+    display: none;
+}
+
+
+.frame {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    align-content: center;
+    display: none;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    padding: 3px 10px;
+    border: 3px solid #000;
+    font-family: cursive;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    position: relative;
+}
+
+.btn-5 {
+    background: rgb(26, 21, 21);
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+#set:hover,
+.btn-5:hover {
+    background: transparent;
+    color: #000;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+}
+
+#set::after,
+#set::before,
+.btn-5:before,
+.btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #000;
+    transition: 400ms ease all;
+}
+
+#set:after,
+.btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+#set:hover:before,
+#set:hover:after {
+    transition: 3000ms ease all;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width: 100%;
+    transition: 3000ms ease all;
+}
+
+#countdown {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    font-size: 75px;
+    font-family: fantasy;
+    color: rgb(65, 161, 36);
+    display: none;
+    justify-content: center;
+}
+
+#timer {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 43%;
+    font-size: xx-large;
+    font-family: cursive;
+    display: none;
+}
+
+#logo {
+    position: absolute;
+    top: 10%;
+    left: 43.5%;
+    display: flex;
+    justify-content: center;
+}
